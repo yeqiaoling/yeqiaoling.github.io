@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="style.css">
+
+<h1>LLM-powered Data Standardization</h1>
+<p><em>Fine-tuning GPT-4o-mini for Electronic Component Parameter Normalization</em></p>
+
+<h2>🔍 Project Motivation</h2>
+<p>
+  Electronic component data often contains inconsistent and redundant parameters. Manual normalization is labor-intensive and error-prone. This project aims to automate parameter standardization using fine-tuned LLMs.
+</p>
+
+<h2>🛠️ Methodology</h2>
+<ul>
+  <li>Prepared 300+ structured examples for fine-tuning (with prompt templates & labeling logic)</li>
+  <li>Fine-tuned <code>gpt-4o-mini</code> with OpenAI API</li>
+  <li>Deployed with FastAPI (endpoints: <code>/batch_standardize</code> and <code>/health_check</code>)</li>
+</ul>
+
+<h2>📊 Results</h2>
+<ul>
+  <li>40% redundant fields identified and standardized</li>
+  <li>Model inference latency < 1s via API</li>
+  <li>Flexible schema: stem/suffix/value/unit/symbol → unified output</li>
+</ul>
+
+<h2>🚀 Deployment</h2>
+<p>
+  <strong>FastAPI Endpoint:</strong> <code>/batch_standardize/</code> <br/>
+  LLM-powered health check available at <code>/health_check/</code>
+</p>
+
+<h2>📁 Code</h2>
+<p>Available on GitHub: <a href="https://github.com/yeqiaoling/fine-tune-standardize">fine-tune-standardize repo</a></p>
