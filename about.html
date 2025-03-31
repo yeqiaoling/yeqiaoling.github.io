@@ -1,45 +1,51 @@
-<link rel="stylesheet" href="style.css">
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About - Qiaoling Ye</title>
+  <title>About | Qiaoling Ye</title>
   <style>
-    body { font-family: sans-serif; margin: 2em; line-height: 1.6; }
-    nav a { margin-right: 15px; text-decoration: none; color: #0366d6; }
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 50px auto;
+      padding: 0 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      color: #222;
+    }
+    a.button {
+      display: inline-block;
+      margin: 10px 10px 0 0;
+      padding: 10px 16px;
+      background-color: #007acc;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    a.button:hover {
+      background-color: #005fa3;
+    }
   </style>
 </head>
 <body>
-  <h1>👩‍💻 About Me</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="about.html">About</a>
-    <a href="resume_qye.pdf">Resume</a>
-  </nav>
-
+  <h1>👋 Hi, I'm Qiaoling Ye</h1>
   <p>
-    Hi! I'm Qiaoling Ye, a data scientist & ML engineer with a PhD in Statistics and 3+ years of industry experience.
-    I build ML systems that transform messy data into structured insight — especially in e-commerce, electronics, and fine-tuning LLMs for real-world use.
+    I'm a Data Scientist with a PhD in Statistics, passionate about AI, fine-tuning LLMs, and building scalable ML systems.
+    My experience spans recommendation systems, data standardization, and end-to-end ML deployment in the electronics e-commerce domain.
   </p>
 
   <p>
-    I'm passionate about solving practical problems using elegant, scalable solutions.  
-    Currently focusing on:
+    This site highlights my personal projects, including LLM fine-tuning for structured data and building industrial-grade APIs.
   </p>
-  <ul>
-    <li>Fine-tuning large language models (LLMs)</li>
-    <li>Personalized recommendations (GNN-based)</li>
-    <li>Data standardization pipelines for electronics</li>
-    <li>API deployment and MLOps best practices</li>
-  </ul>
 
-  <p>Outside of work, I'm a foodie, fitness lover, and technology thinker.</p>
-
-  <footer>
-    <p>© 2025 Qiaoling Ye</p>
-  </footer>
+  <h2>📄 Resume</h2>
+  <p>
+    You can view or download my resume here:
+  </p>
+  <a href="resume_qye.pdf" class="button" target="_blank">View Resume</a>
+  <a href="resume_qye.pdf" class="button" download>Download Resume</a>
 </body>
 </html>
