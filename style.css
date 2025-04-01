@@ -1,55 +1,73 @@
-/* style.css */
-
+/* General layout */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Helvetica Neue", Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
+    margin: 2em;
+    background-color:#fdfdfd;
     color: #333;
-}
-
-header {
-    background-color: #2c3e50;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-main {
-    padding: 40px;
-    max-width: 900px;
-    margin: auto;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-h1, h2 {
+  }
+  
+  /* Headings */
+  h1, h2, h3 {
     color: #2c3e50;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-a {
-    color: #2980b9;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #ecf0f1;
-    margin-top: 50px;
-}
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    margin-top: 1.5em;
+  }
+  
+  /* Navigation */
+  nav {
+    margin-bottom: 2em;
+  }
+  
+  nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #0366d6;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Links */
+  a {
+    color: #0366d6;
+  }
+  
+  a:hover {
+    color: #0056b3;
+  }
+  
+  /* Lists */
+  ul {
+    padding-left: 1.2em;
+  }
+  
+  ul li {
+    margin-bottom: 0.5em;
+  }
+  
+  /* Code blocks */
+  code {
+    font-family: "Courier New", Courier, monospace;
+    background-color: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 3em;
+    font-size: 0.9em;
+    color: #888;
+  }
+  
