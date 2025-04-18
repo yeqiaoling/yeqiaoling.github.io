@@ -4,26 +4,66 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>How to Talk to Executives When There’s No Clear Answer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Georgia, serif;
+      line-height: 1.6;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem;
+      background: #fafafa;
+    }
+    header, footer {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    nav a {
+      margin: 0 0.5rem;
+      text-decoration: none;
+      color: #555;
+    }
+    .meta {
+      color: #888;
+      font-size: 0.9em;
+    }
+    blockquote {
+      background: #f0f0f0;
+      border-left: 4px solid #ccc;
+      padding: 0.75rem 1rem;
+      margin: 1rem 0;
+      font-style: italic;
+    }
+    ul, ol {
+      padding-left: 1.5rem;
+    }
+    h2, h3 {
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1><a href="index.html">Qiaoling Ye</a> — Blog</h1>
+  <!-- <header>
+    <h1><a href="../index.html">Qiaoling Ye</a> — Blogs</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="blog.html">Blogs</a>
+      <a href="../index.html">Home</a>
+      <a href="../projects.html">Projects</a>
+      <a href="../blogs.html">Blogs</a>
+      <a href="../about.html">About</a>
+      <a href="resume_qye.pdf">Resume</a>
     </nav>
-  </header>
+  </header> -->
 
   <main class="blog-post">
     <h2>How to Talk to Executives When There’s No Clear Answer</h2>
-    <p class="meta">By Qiaoling Ye | April 19, 2025</p>
-    <p class="description">A 5-step framework for structuring ambiguous conversations, inspired by real VP-level discussions.</p>
-
-    <h3>Intro: From executive questions to structured thinking</h3>
-    <p>Recently, I had the chance to speak with several senior leaders — a VP of Data Science, a CIO, a Director of Analytics. Each conversation taught me something different.</p>
-    <p>But there was one common thread: their questions weren’t about model accuracy, dashboards, or specific tools.</p>
+    <p class="description">A 5-step framework for structuring ambiguous conversations — inspired by real VP-level discussions.</p>
+    <p class="meta">
+        By <a href="https://yeqiaoling.github.io" target="_blank">Qiaoling Ye</a> | April 19, 2025
+    </p>
+        
+    <h3>✨ Intro: From Executive Questions to Structured Thinking</h3>
+    <p>Recently, I had the chance to speak with several senior leaders — a VP of Data Science, a CIO, and a Director of Analytics. Each conversation was unique, but they shared one key trait:</p>
+    <p>Their questions weren’t about model accuracy, dashboards, or tooling. Instead, they asked things like:</p>
     <ul>
       <li>“How would you structure a forecasting system for seller behavior?”</li>
       <li>“How would you identify healthy eaters for a new feature rollout?”</li>
@@ -34,62 +74,67 @@
       Can you create a decision path when the problem isn’t well defined?<br>
       Can you help others make better decisions — not just build better models?
     </blockquote>
-
-    <h3>What executives are really asking for</h3>
-    <p>When leaders ask “what would you do,” they don’t want a fixed solution. They’re looking for your ability to:</p>
+  
+    <h3>🧠 What Executives Are Really Asking For</h3>
+    <p>When leaders ask, “What would you do?” — they’re not expecting a perfect answer.</p>
+    <p>They’re evaluating whether you can:</p>
     <ul>
       <li>Frame the real business goal</li>
       <li>Identify the key factors involved</li>
-      <li>Lay out the options clearly</li>
-      <li>Show you understand the tradeoffs</li>
-      <li>Offer a principled starting point, not perfection</li>
+      <li>Lay out clear options</li>
+      <li>Understand the tradeoffs</li>
+      <li>Offer a principled, testable path forward</li>
     </ul>
-    <p>In other words, they want <strong>decision collaborators</strong>, not just data producers.</p>
-
-    <h3>A mental structure — The 5-Step Response Framework</h3>
+    <p>In short, they want <strong>decision collaborators</strong> — not just data producers.</p>
+  
+    <h3>🪜 A Mental Structure: The 5-Step Response Framework</h3>
+    <p>After a few rounds of learning-by-doing, I now use this 5-step mental model when facing ambiguity:</p>
     <ol>
       <li><strong>Clarify the goal</strong><br><em>“What are we actually trying to optimize or decide?”</em></li>
-      <li><strong>Define the key variables or dimensions</strong><br><em>“What are the controllable and observable factors?”</em></li>
-      <li><strong>Propose 2–3 possible paths</strong><br><em>“What are some ways we could approach this, even roughly?”</em></li>
-      <li><strong>Compare tradeoffs</strong><br><em>“What would each path get us, and what would we lose?”</em></li>
-      <li><strong>Recommend a starting point + learning loop</strong><br><em>“Here’s what I’d try first, and how we’d learn from it.”</em></li>
+      <li><strong>Define key variables or dimensions</strong><br><em>“What factors influence the outcome, and which can we observe or control?”</em></li>
+      <li><strong>Propose 2–3 viable paths</strong><br><em>“What are some reasonable approaches we could take?”</em></li>
+      <li><strong>Compare tradeoffs</strong><br><em>“What are the pros and cons of each path?”</em></li>
+      <li><strong>Recommend a starting point + feedback loop</strong><br><em>“Here’s what I’d try first — and how we’d learn from it.”</em></li>
     </ol>
-
-    <h3>Example – Predicting quote acceptance in resale</h3>
-    <p>In one conversation, a VP of DS asked me how I’d structure a prediction system for quote acceptance on a luxury resale platform — where every item is unique, sellers are diverse, and seasonality matters.</p>
-    <p><strong>1. Goal:</strong><br> Predict whether a seller will accept a quote — to reduce latency, improve inventory flow, and inform pricing strategy.</p>
+  
+    <h3>💼 Case Study: Predicting Quote Acceptance in Resale</h3>
+    <p>In one discussion, a VP of DS asked how I’d approach predicting quote acceptance on a luxury resale platform — where every item is unique, sellers vary widely, and seasonality matters.</p>
+  
+    <p><strong>1. Goal:</strong> Predict whether a seller will accept a quote, to improve pricing accuracy, reduce delays, and optimize inventory flow.</p>
+  
     <p><strong>2. Key variables:</strong></p>
     <ul>
-      <li>Historical acceptance rate (by seller)</li>
-      <li>Item characteristics (brand, category, price range)</li>
-      <li>Time of year (seasonality)</li>
-      <li>Time lag between quote & response</li>
+      <li>Seller’s historical acceptance rate</li>
+      <li>Item features (brand, category, price range)</li>
+      <li>Seasonality and time of year</li>
+      <li>Time lag between quote and response</li>
     </ul>
+  
     <p><strong>3. Possible paths:</strong></p>
     <ul>
       <li>Seller-level behavioral modeling</li>
-      <li>Item-level + brand sensitivity</li>
-      <li>Contextual modeling (quote timing, macro trends)</li>
+      <li>Item-level modeling based on brand and pricing sensitivity</li>
+      <li>Contextual modeling (quote timing, macroeconomic signals)</li>
     </ul>
+  
     <p><strong>4. Tradeoffs:</strong></p>
     <ul>
-      <li>Seller models are stable but not generalizable</li>
-      <li>Item models are broader but noisier</li>
-      <li>Contextual models are dynamic but harder to validate</li>
+      <li>Seller models are stable but lack generalizability</li>
+      <li>Item models are flexible but noisier</li>
+      <li>Contextual models adapt quickly but may overfit trends</li>
     </ul>
-    <p><strong>5. Recommendation:</strong><br> Start with a hybrid model combining seller + item factors, and layer in contextual features for calibration. Validate via A/B test on acceptance rate uplift. Prioritize interpretability for merchandising decisions.</p>
-
-    <h3>Why this matters</h3>
-    <p>Building models is only part of our job. Communicating structured judgment is just as important — especially when working across product, operations, or with executive teams.</p>
-    <p>A well-framed decision path turns ambiguity into alignment.</p>
-    <p>I’m still practicing this myself. But when I do it right, I notice the conversation shifts — from “can you analyze this” to “can you help us decide.”</p>
-
-    <h3>Let’s connect</h3>
-    <p>If you're navigating ambiguous decisions in data science or product roles, I’d love to hear how you approach them. What frameworks help you bring structure into chaos?</p>
+  
+    <p><strong>5. Recommendation:</strong> I’d start with a hybrid seller-item model, layering in contextual features for calibration. We could A/B test for uplift in acceptance rate and prioritize interpretability for merchandiser trust.</p>
+  
+    <h3>🧭 Why This Matters</h3>
+    <p>Building models is just part of the job. Communicating structured judgment — especially when partnering with product, marketing, or operations — is equally essential.</p>
+    <p>When done well, a decision path turns ambiguity into alignment. And I’ve noticed: when you bring clarity, the conversation shifts — from “Can you analyze this?” to “Can you help us decide?”</p>
+  
+    <h3>🤝 Let’s Connect</h3>
+    <p>If you're navigating ambiguous decisions in data or product, I’d love to hear how you approach them. What frameworks help you bring structure to chaos?</p>
   </main>
-
+  
   <footer>
-    <p>&copy; 2024 Qiaoling Ye. All rights reserved.</p>
+    <p>© 2025 Qiaoling Ye</p>
   </footer>
-</body>
-</html>
+  
